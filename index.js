@@ -160,6 +160,7 @@ console.log('Sort by name : ', characters.sort((a,b) => {
 
 
 
+
 // Sort by mass
 
 console.log('sort by mass ' , characters.sort((a,b) => {
@@ -173,4 +174,19 @@ console.log('sort by mass ' , characters.sort((a,b) => {
 }));
 
 // Sort by height
+
+console.log('Sort by height : ', characters.sort((x, y) => {
+    if(x.height < y.height) return -1;
+    else if(x.height > y.height) return 1;
+    else return 0;
+}));
+
 // Sort by gender
+
+console.log('Sort by gender : ', characters.sort((x,y) => {
+    if(x.height < y.height) return -1;
+    else if(x.height > y.height) return 1;
+    else return 0;
+}));
+
+
