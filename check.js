@@ -1,1 +1,1 @@
-console.log('Hi Mitesh vaghela from git');
+console.log('Welcome to javascript array functions');
