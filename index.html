@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Object oriented programming in javascript.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Object oriented programming in javascript.</h1>
+        
+        <script>
+            
+
+            // var global = 'global variable '; 
+
+
+            // function aa(){
+            //     console.log('Inside : ' + global);
+
+            //     var global = 'Inside global variable ';
+
+
+            //     function run(){
+            //         console.log('top inner = ' + global);
+            //     }
+            //     run();
+            // }
+
+            // aa();
+
+            // console.log('outer global : ' + global);
+
+
+
+
+            // var obj = {num : 20};
+            
+            // var addToThis = function (n, o, p ){
+            //     return this.num + n + o + p;
+            // }
+
+            // //console.log('Call result : ' + addToThis.call(obj, 9));
+
+            // //console.log('Apply result : ' + addToThis.apply(obj, [10]));
+
+
+            // let bindMe = addToThis.bind(obj);
+
+            // console.log(bindMe(1, 0, 3));
+
+
+            // example of clouser 
+
+            // function glob(){
+            //     let gl = 1;
+            //     function mult(){
+            //         let x = 2; 
+
+            //         let add = function(n){
+            //             x = x * n + gl;
+            //             return x;
+            //         }
+            //         return add;
+            //     }
+            //     console.log('final value : ' + mult()(4));
+            //     console.dir(mult());
+            // }
+
+            // glob();
+
+            //console.log(mult()(4));
+
+
+
+            // var rentPrice = function(initialRent){
+            //     var rent = Number(initialRent);
+
+            //     return {
+
+            //         getRent : function(){
+            //             return console.log(rent);
+            //         },
+            //         incRent : function(amount){
+            //             rent += amount;
+            //             return console.log(rent);
+            //         },
+            //         decRent : function(amount){
+            //             rent -= amount
+            //             return console.log(rent);
+            //         }
+            //     }
+            // }
+
+            // var rent = rentPrice(1000);
+
+            // rent.getRent()
+            // rent.incRent(100)
+            // rent.decRent(90)
+            // rent.decRent(100)
+            // rent.getRent();
+
+
+
+        // let f; 
+
+        // if(true){
+
+        //     let i = 2;
+
+        //     f = function(){
+        //         return console.log(i);
+        //     }
+
+        // }
+
+
+        // f();
+        // console.dir(f);
+
+
+
+
+        // for(let i=0; i<3; i++){
+        //     setTimeout(() => {
+        //         console.log(i);
+        //     }, 1000);
+        // }
+
+
+            // Promises in javascript 
+
+            // console.log('start');
+
+            // console.log('Let us mimic actually fetching data from api');
+
+
+            // function fetchUser(email, password, callback){
+            //     setTimeout(() => {
+            //         callback({email, password})
+            //     }, 2000);
+            // }
+
+            // function fetchUserVideos(email, callback){
+            //     setTimeout(() => {
+            //         callback(['video1','video2','video3']);
+            //     }, 1500);
+            // }
+
+            // function fetchUserVideoDetail(video, callback){
+            //     setTimeout(() => {
+            //         callback('Description of the video');
+            //     }, 1500)
+            // }
+
+
+            // const user1 = fetchUser('vaghelaMitesh@yahoo.com', '12345', (user) => {
+            //     console.log('Fetch user data from api');
+            //     console.log(user)
+
+            //     // fetch user videos 
+            //     const videos = fetchUserVideos(user.email, (videos) => {
+            //         console.log('User videos');
+            //         console.log(videos);
+
+            //         const videoDetail = fetchUserVideoDetail(videos[0], (detail) => {
+            //             console.log('Fetching video Detail ');
+            //             console.log(detail);
+            //         })
+
+            //     })
+
+            // });
+            
+
+
+
+            // console.log('end')
+
+           // how to write promises 
+
+
+        //    const cleanTheRoom = function(){
+        //        return new Promise(function(resolve, reject){
+        //            resolve('Room cleaned');
+        //        })
+        //    }
+
+        //    const removeGarbage = function(){
+        //        return new Promise(function(resolve, reject){
+        //            resolve('Garbage removed');
+        //        })
+        //    }
+
+        //    const winIceCream = function(){
+        //        return new Promise(function(resolve, reject){
+        //            reject('Won icecream');
+        //        })
+        //    }
+
+        //    cleanTheRoom().then(function(data){
+        //        console.log(data);
+
+        //        return removeGarbage();
+        //    }).then(function(data){
+        //        console.log(data);
+        //        return winIceCream();
+        //    }).then(function(data){
+        //        console.log(data)
+        //        console.log('All work done.');
+        //    });
+
+
+        // Promise.all([cleanTheRoom(), removeGarbage(), winIceCream()]).then(function(data){
+        //     console.log('All promises are done');
+        // }).catch(function(){
+        //     console.log('Not all promises are resolved');
+        // })
+
+
+        // Promise.race([cleanTheRoom(), removeGarbage(), winIceCream()]).then(function(data){
+        //     console.log('any of the 3 promises are resolved');
+        // })
+
+
+
+            // promises in javascript 
+
+            
+
+            const fetchUserData = function(email, password){
+                return new Promise(function(resolve, reject){
+                    setTimeout(() => {
+                        resolve({email, password});
+                    }, 2000)
+                });
+            }
+
+            const fetchUserVideos = function(email){
+                return new Promise(function(resolve, reject){                    
+                    setTimeout(() => {
+                        resolve(['video1','video2','video3']);
+                    }, 2000);                    
+                })
+            }
+
+            const fetchUserVideoDetail = function(video){
+                return new Promise(function(resolve, reject){
+                    setTimeout(() => {
+                        resolve('Detail of the video');
+                    }, 2000)
+                })
+            }
+
+            
+            // fetchUserData('mitesh@yahoo.com', '12345').then(function(data){
+            //     console.log('Fetch user Data');
+            //     console.log(data);
+            //     return fetchUserVideos();
+            // }).then(function(data){
+            //     console.log('Fetch user videos')
+            //     console.log(data);
+            //     return fetchUserVideoDetail();
+            // }).then(function(data){
+            //     console.log('Fetch video detail');
+            //     console.log(data);
+            // })
+
+
+//             async function displayUserData(){
+
+//                 const userData = await fetchUserData('Mitesh@yahoo.com','12345');
+//                 const userVideos = await fetchUserVideos('mitesh@yahoo.com');
+//                 const userVideoDetail = await fetchUserVideoDetail(['video1']);
+
+//                 console.log(userVideoDetail);
+//             }
+
+//             displayUserData();
+
+// // jsonplaceholder.typicode.com/ 
+
+
+
+
+// fetch(url)
+//     .then(res => {
+//         return res.json();
+//     })
+//     .then(data => {
+//         console.log(data);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     });
+
+
+// const userfun = async () => {
+    
+//     const url = 'https://jsonplaceholder.typicode.com/users/1';
+//     let userData = await fetch(url);
+//     let res = await userData.json();
+//     console.log(res);
+// }
+
+// userfun();
+
+                    // find avg of values 
+
+                    // let avg = function(...n){
+                    //     let total = 0;
+                    //     for(i=0; i< n.length; i++){
+                    //         total += n[i];
+                    //     }
+                    //     return total/n.length;
+                    // }
+
+                    // let spiceUp = function(fn, ...n){
+                    //     return function(...m){
+                    //         return fn.apply(this, n.concat(m));
+                    //     }
+                    // }
+
+                    // let doAvg = spiceUp(avg, 1,2,3,4);
+
+                    // console.log(doAvg(2,3));
+
+
+
+
+
+                    
+ 
+        </script>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
