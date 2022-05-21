@@ -191,4 +191,17 @@ console.log('Sort by gender : ', characters.sort((x,y) => {
 
 
 
-// this is new file update.
+// EVERY javascript array function 
+// Does every character have blue eyes?
+// Does every character have mass more than 40?
+// Is every character shorter than 200?
+// Is every character male?
+
+
+// SOME javascript array function 
+
+// Is there at least one male character?
+// Is there at least one character with blue eyes?
+// Is there at least one character taller than 200?
+// Is there at least one character that has mass less than 50?
+
